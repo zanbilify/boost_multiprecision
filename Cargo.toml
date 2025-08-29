@@ -1,0 +1,25 @@
+[package]
+name = "boost_multiprecision"
+description = "Boost C++ library boost_multiprecision packaged using Zanbil"
+version = "0.1.0"
+edition = "2024"
+links = "boost_multiprecision"
+license = "BSL-1.0"
+repository = "https://github.com/zanbilify/boost_multiprecision"
+
+[package.metadata.zanbil]
+make_dependencies_public = true
+
+[dependencies]
+boost_assert = { version = "0.1.0", path = "../boost_assert" }
+boost_config = { version = "0.1.0", path = "../boost_config" }
+boost_core = { version = "0.1.0", path = "../boost_core" }
+boost_integer = { version = "0.1.0", path = "../boost_integer" }
+boost_lexical_cast = { version = "0.1.0", path = "../boost_lexical_cast" }
+boost_math = { version = "0.1.0", path = "../boost_math" }
+boost_predef = { version = "0.1.0", path = "../boost_predef" }
+boost_random = { version = "0.1.0", path = "../boost_random" }
+boost_throw_exception = { version = "0.1.0", path = "../boost_throw_exception" }
+
+[build-dependencies]
+zanbil-boost-build = "0.1.0"
